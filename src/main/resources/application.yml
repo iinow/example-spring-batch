@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.0.24:3308/batch?characterEncoding=utf8&useSSL=false
+    username: root
+    password: qlalfqjsghekd
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  batch:
+    jdbc:
+      initialize-schema: never
+    job:
+      enabled: false
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+  config:
+    activate:
+      on-profile:
+
