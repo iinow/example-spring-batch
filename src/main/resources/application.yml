@@ -21,3 +21,6 @@ spring:
     activate:
       on-profile:
 
+key:
+  value: ${KEY:}
+
